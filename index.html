@@ -1,57 +1,216 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inicio · Raitecitos</title>
-<meta name="description" content="Raitecitos: viajes, envíos y comida a domicilio.">
+<title>Raitecitos · Viajes, envíos y comida a domicilio a tu precio</title>
+<meta name="description" content="Viajes en auto y moto, envíos de paquetes y comida a domicilio. Tú propones el precio y eliges a tu conductor.">
+<meta name="theme-color" content="#57C7D3">
+<meta property="og:title" content="Raitecitos · Viajes, envíos y comida a domicilio a tu precio">
+<meta property="og:description" content="Viajes en auto y moto, envíos de paquetes y comida a domicilio. Tú propones el precio y eliges a tu conductor.">
+<meta property="og:image" content="logo.png">
 <link rel="icon" href="logo.png">
-<style>
-  :root { --brand: #57C7D3; --brand-dark: #137C88; --ink: #10202E; --muted: #5F6B76; --bg: #F3F6F8; --card: #FFFFFF; --border: #E3E9EE; }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--bg); color: var(--ink); }
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; font-size: 17px; }
-  header { background: var(--brand); }
-  .bar { max-width: 860px; margin: 0 auto; padding: 16px; display: flex; align-items: center; gap: 12px; }
-  .bar img { width: 48px; height: 48px; border-radius: 12px; background: #fff; }
-  .bar strong { font-size: 22px; color: #06263D; }
-  nav { max-width: 860px; margin: 0 auto; padding: 0 16px 14px; display: flex; flex-wrap: wrap; gap: 8px; }
-  nav a { color: #06263D; text-decoration: none; font-weight: 700; font-size: 15px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.45); }
-  nav a[aria-current="page"] { background: #fff; }
-  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
-  .card { background: var(--card); border-radius: 20px; padding: 28px 24px; }
-  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 6px; }
-  h2 { font-size: 20px; margin: 28px 0 8px; }
-  p { margin: 0 0 12px; }
-  ul { margin: 0 0 12px; padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  .muted { color: var(--muted); font-size: 15px; }
-  .draft { background: #FBEFE2; color: #7A4A12; font-weight: 700; border-radius: 12px; padding: 12px 16px; margin-bottom: 20px; }
-  .steps li { margin-bottom: 10px; }
-  .btn { display: inline-block; background: var(--brand); color: #06263D; font-weight: 800; text-decoration: none; padding: 12px 20px; border-radius: 999px; }
-  a { color: var(--brand-dark); }
-  footer { max-width: 860px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 14px; }
-</style>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<header>
-  <div class="bar"><img src="logo.png" alt=""><strong>Raitecitos</strong></div>
-  <nav aria-label="Secciones"><a href="index.html" aria-current="page">Inicio</a><a href="privacidad.html">Aviso de Privacidad</a><a href="terminos.html">Términos y Condiciones</a><a href="eliminar-cuenta.html">Eliminar cuenta</a></nav>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Raitecitos, inicio"><img src="logo.png" alt="" width="40" height="40"><span>Raitecitos</span></a>
+    <nav class="links" aria-label="Principal"><a href="index.html#servicios">Servicios</a><a href="index.html#gana">Gana con Raitecitos</a><a href="index.html#seguridad">Seguridad</a><a href="index.html#preguntas">Ayuda</a></nav>
+    <a class="btn btn-dark btn-sm" href="index.html#descargar">Descarga la app</a>
+    <details class="mobile-menu">
+      <summary aria-label="Abrir menú"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+      <nav aria-label="Menú"><a href="index.html#servicios">Servicios</a><a href="index.html#gana">Gana con Raitecitos</a><a href="index.html#seguridad">Seguridad</a><a href="index.html#preguntas">Ayuda</a><a href="privacidad.html">Aviso de Privacidad</a><a href="terminos.html">Términos</a></nav>
+    </details>
+  </div>
 </header>
-<main><div class="card">
-<p class="draft">Borrador · pendiente de revisión legal</p>
-<h1>Raitecitos</h1>
-<p>Viajes en auto y moto, envíos de paquetes, comida y compras a domicilio, y viajes de ciudad a ciudad, con precio que tú propones.</p>
-<h2>Documentos</h2>
-<ul>
-  <li><a href="privacidad.html">Aviso de Privacidad</a></li>
-  <li><a href="terminos.html">Términos y Condiciones</a></li>
-  <li><a href="eliminar-cuenta.html">Cómo eliminar tu cuenta</a></li>
-</ul>
-<h2>Contacto</h2>
-<p>Soporte: <a href="mailto:raitecitos@gmail.com">raitecitos@gmail.com</a> o desde la app en <strong>Soporte</strong>.</p>
-<p class="muted">[NOMBRE COMPLETO O RAZÓN SOCIAL DEL RESPONSABLE] · [DOMICILIO COMPLETO: CALLE, NÚMERO, COLONIA, CÓDIGO POSTAL, MUNICIPIO Y ESTADO]</p>
-</div></main>
-<footer>© 2026 Raitecitos · Contacto: <a href="mailto:raitecitos@gmail.com">raitecitos@gmail.com</a></footer>
+<main id="contenido">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Viajes · Envíos · Comida a domicilio</p>
+      <h1>Tú propones<br>el precio.</h1>
+      <p class="lead">Ofrece lo que te parece justo y elige a tu conductor. Viajes en auto y moto, envíos y comida a domicilio en una sola app.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="#descargar">Descarga la app</a>
+        <a class="btn btn-ghost" href="#conductores">Quiero conducir <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="phone-screen">
+        <div class="map">
+          <span class="route"></span><span class="dot dot-a"></span><span class="dot dot-b"></span>
+          <span class="car-chip"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2M4 13l2-5a2 2 0 0 1 2-1.4h8A2 2 0 0 1 18 8l2 5v4H4z"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></svg></span>
+        </div>
+        <div class="sheet">
+          <div class="handle"></div>
+          <div class="search"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>¿A dónde y por cuánto?</span></div>
+          <div class="offer">
+            <div><small>Tu oferta</small><strong>$65</strong></div>
+            <span class="pill">Sugerida $60</span>
+          </div>
+          <div class="driver">
+            <span class="avatar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            <div><strong>Conductor a 3 min</strong><small>★ 4.9 · Versa blanco</small></div>
+            <span class="accept">Aceptar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="section">
+  <div class="wrap">
+    <h2>Una app, muchos servicios</h2>
+    <p class="sub">Todo lo que necesitas para moverte y recibir lo que pides en tu ciudad.</p>
+    <div class="cards">
+      <article class="card svc-teal">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2M4 13l2-5a2 2 0 0 1 2-1.4h8A2 2 0 0 1 18 8l2 5v4H4z"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></svg></span>
+        <h3>Viajes en auto</h3>
+        <p>Para el día a día, cómodo y a tu precio.</p>
+      </article>
+      <article class="card svc-violet">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="16.5" r="3"/><circle cx="18.5" cy="16.5" r="3"/><path d="M5.5 16.5 9 10h5l4.5 6.5M14 10l-1.5-3H10M12.5 7H16"/></svg></span>
+        <h3>Viajes en moto</h3>
+        <p>Rápido en trayectos cortos y con tráfico.</p>
+      </article>
+      <article class="card svc-orange">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg></span>
+        <h3>Envío de paquetes</h3>
+        <p>Manda documentos o paquetes por la ciudad.</p>
+      </article>
+      <article class="card svc-red">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0zM12 3v4M8 4.5v2.5M16 4.5v2.5"/></svg></span>
+        <h3>Comida y compras</h3>
+        <p>Pide a los negocios de tu zona y recíbelo en tu puerta.</p>
+      </article>
+      <article class="card svc-blue">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21 10 3M16 21 14 3M12 6v2M12 11v2M12 16v2"/></svg></span>
+        <h3>Ciudad a ciudad</h3>
+        <p>Viajes largos, ahora o programados.</p>
+      </article>
+      <article class="card svc-green">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h6a3 3 0 0 1 0 6H10a3 3 0 0 0 0 6h6"/></svg></span>
+        <h3>Hasta 4 destinos</h3>
+        <p>Haz varias paradas en un mismo viaje.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Así de fácil</h2>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><h3>Elige tu destino</h3><p>Escribe a dónde vas o mueve el pin en el mapa. Puedes agregar hasta 4 destinos.</p></div>
+      <div class="step"><span class="num">2</span><h3>Propón tu precio</h3><p>Usa la tarifa sugerida o cámbiala. Los conductores cercanos ven tu oferta.</p></div>
+      <div class="step"><span class="num">3</span><h3>Elige a tu conductor</h3><p>Compara precio, calificación y vehículo. Sigue tu viaje en el mapa y paga al llegar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gana" class="section">
+  <div class="wrap">
+    <h2>Gana con Raitecitos</h2>
+    <div class="earn">
+      <article id="conductores" class="earn-card dark">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2M4 13l2-5a2 2 0 0 1 2-1.4h8A2 2 0 0 1 18 8l2 5v4H4z"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></svg></span>
+        <h3>Conduce o reparte</h3>
+        <ul>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Tú decides cuándo conectarte.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8" r="1.5"/></svg> Elige cada día qué hacer: viajes, paquetes, comida o ciudad a ciudad.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg> Ve en el mapa las zonas con más solicitudes.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9v.01M18 15v.01"/></svg> Cobras en efectivo y descargas tus recibos. Comisión de 14 % + IVA.</li>
+        </ul>
+        <a class="btn btn-light" href="#descargar">Regístrate como conductor <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+      <article id="negocios" class="earn-card">
+        <span class="card-ic"><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16l-1.5-5h-13zM5 9v11h14V9M9 20v-6h6v6"/></svg></span>
+        <h3>Registra tu negocio</h3>
+        <ul>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0zM12 3v4M8 4.5v2.5M16 4.5v2.5"/></svg> Publica tu menú o catálogo con fotos y precios.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg> Recibe pedidos; los repartidores cercanos los entregan.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Abre y cierra tu tienda cuando quieras.</li>
+          <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 9v.01M18 15v.01"/></svg> Comisión de 18 % + IVA sobre tus productos.</li>
+        </ul>
+        <a class="btn btn-dark" href="#descargar">Registra tu negocio <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="seguridad" class="section alt">
+  <div class="wrap">
+    <h2>Tu seguridad primero</h2>
+    <p class="sub">Herramientas pensadas para que viajes tranquilo y para que alguien sepa dónde estás.</p>
+    <div class="safety">
+      <div><svg class="ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2"/><path d="M14 10h4M14 14h3"/></svg><h3>Conductores verificados</h3><p>Revisamos INE, licencia, tarjeta de circulación y seguro antes de aprobar a cada conductor.</p></div>
+      <div><svg class="ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><h3>Sabes quién llega</h3><p>Foto, nombre, calificación, vehículo y placas antes de subir.</p></div>
+      <div><svg class="ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="m8.2 10.8 7.6-3.6M8.2 13.2l7.6 3.6"/></svg><h3>Comparte tu viaje</h3><p>Manda tu ubicación y los datos del conductor a quien tú quieras.</p></div>
+      <div><svg class="ic" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><h3>Botón de seguridad</h3><p>Avisa a tus contactos de emergencia y al equipo de Raitecitos. En peligro, llama al 911.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas" class="section">
+  <div class="wrap narrow">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details><summary>¿Cómo funciona el precio?</summary><p>La app te sugiere una tarifa según la distancia y el tiempo. Tú puedes subirla o bajarla; los conductores cercanos aceptan tu oferta o te mandan una contraoferta y tú eliges.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>Por ahora el pago es en efectivo, directamente al conductor, con el precio que acordaron en la app.</p></details>
+      <details><summary>¿Es seguro?</summary><p>Todos los conductores pasan por una verificación de documentos. Antes de subir ves su foto, nombre, vehículo y placas; puedes compartir tu viaje y avisar a tus contactos de emergencia con un botón.</p></details>
+      <details><summary>¿Cómo me registro como conductor?</summary><p>Descarga la app, crea tu cuenta eligiendo &quot;Manejar o repartir&quot; y sube tus documentos (INE, licencia, tarjeta de circulación, póliza de seguro y foto del vehículo). Te avisamos cuando estés aprobado.</p></details>
+      <details><summary>¿Cuánto cobra Raitecitos?</summary><p>A los conductores, el 14 % de cada servicio más IVA. A los negocios, el 18 % de sus ventas más IVA. Se paga cada semana después del corte del domingo.</p></details>
+      <details><summary>¿Cómo elimino mi cuenta?</summary><p>Desde la app en Mi cuenta &gt; Eliminar mi cuenta, o siguiendo los pasos de la página &quot;Eliminar cuenta&quot;.</p></details>
+    </div>
+    <p class="sub">¿Otra duda? Escríbenos a <a href="mailto:raitecitos@gmail.com">raitecitos@gmail.com</a> o desde la sección Soporte de la app.</p>
+  </div>
+</section>
+
+<section id="descargar" class="download">
+  <div class="wrap download-grid">
+    <div>
+      <h2>Muy pronto en tu celular</h2>
+      <p>Raitecitos estará disponible en Google Play y en la App Store.</p>
+    </div>
+    <div class="stores">
+      <span class="store"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg><span><small>Próximamente en</small>Google Play</span></span>
+      <span class="store"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg><span><small>Próximamente en la</small>App Store</span></span>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap cols">
+    <div class="col brandcol">
+      <a class="brand" href="index.html"><img src="logo.png" alt="" width="40" height="40"><span>Raitecitos</span></a>
+      <p>Viajes, envíos y comida a domicilio con precios que tú propones.</p>
+    </div>
+    <div class="col">
+      <h3>Servicios</h3>
+      <a href="index.html#servicios">Viajes en auto</a><a href="index.html#servicios">Viajes en moto</a><a href="index.html#servicios">Envío de paquetes</a><a href="index.html#servicios">Comida y compras</a><a href="index.html#servicios">Ciudad a ciudad</a>
+    </div>
+    <div class="col">
+      <h3>Gana con Raitecitos</h3>
+      <a href="index.html#conductores">Conduce</a><a href="index.html#negocios">Registra tu negocio</a>
+    </div>
+    <div class="col">
+      <h3>Ayuda</h3>
+      <a href="index.html#preguntas">Preguntas frecuentes</a><a href="mailto:raitecitos@gmail.com">raitecitos@gmail.com</a><a href="index.html#seguridad">Seguridad</a>
+    </div>
+    <div class="col">
+      <h3>Legal</h3>
+      <a href="privacidad.html">Aviso de Privacidad</a><a href="terminos.html">Términos y Condiciones</a><a href="eliminar-cuenta.html">Eliminar cuenta</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>© 2026 Raitecitos. Responsable: Fernando Alexander Peña Saliamonas · RFC PESF070322N91 · Calle Cisne, Fraccionamiento Las Aralias II, C.P. 48328, Puerto Vallarta, Jalisco, México.</p>
+    <p>Raitecitos es una plataforma tecnológica que conecta a usuarios con conductores independientes y negocios locales. Si estás en peligro, llama al 911.</p>
+  </div>
+</footer>
 </body>
 </html>

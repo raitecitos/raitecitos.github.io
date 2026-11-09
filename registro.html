@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crea tu cuenta · Raitecitos</title>
+<meta name="description" content="Regístrate en Raitecitos como pasajero, conductor o negocio.">
+<meta name="theme-color" content="#57C7D3">
+<meta property="og:title" content="Crea tu cuenta · Raitecitos">
+<meta property="og:description" content="Regístrate en Raitecitos como pasajero, conductor o negocio.">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="is-doc">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Raitecitos, inicio"><img src="logo.png" alt="" width="40" height="40"><span>Raitecitos</span></a>
+    <nav class="links" aria-label="Principal"><a href="index.html#servicios">Servicios</a><a href="index.html#gana">Gana con Raitecitos</a><a href="index.html#seguridad">Seguridad</a><a href="index.html#preguntas">Ayuda</a><a href="terminos.html">Términos</a><a href="privacidad.html">Privacidad</a></nav>
+    <a class="btn btn-dark btn-sm" href="registro.html">Regístrate</a>
+    <details class="mobile-menu">
+      <summary aria-label="Abrir menú"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+      <nav aria-label="Menú"><a href="index.html#servicios">Servicios</a><a href="index.html#gana">Gana con Raitecitos</a><a href="index.html#seguridad">Seguridad</a><a href="index.html#preguntas">Ayuda</a><a href="terminos.html">Términos</a><a href="privacidad.html">Privacidad</a><a class="menu-cta" href="registro.html">Regístrate</a></nav>
+    </details>
+  </div>
+</header>
+<main id="contenido">
+<section class="doc-hero"><div class="wrap narrow"><h1>Crea tu cuenta</h1><p>Regístrate aquí y después inicia sesión en la app con el mismo correo y contraseña.</p></div></section>
+<section class="section reg-section"><div class="wrap narrow">
+  <form id="registro" class="reg" novalidate>
+    <fieldset class="roles">
+      <legend>¿Cómo quieres usar Raitecitos?</legend>
+      <label class="role"><input type="radio" name="role" value="rider" checked><span><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><strong>Pedir viajes</strong><small>Viajes, envíos y comida</small></span></label>
+      <label class="role"><input type="radio" name="role" value="driver"><span><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14M6 17v2M18 17v2M4 13l2-5a2 2 0 0 1 2-1.4h8A2 2 0 0 1 18 8l2 5v4H4z"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></svg><strong>Manejar o repartir</strong><small>Gana dinero con tu vehículo</small></span></label>
+      <label class="role"><input type="radio" name="role" value="merchant"><span><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16l-1.5-5h-13zM5 9v11h14V9M9 20v-6h6v6"/></svg><strong>Tengo un negocio</strong><small>Vende comida o productos</small></span></label>
+    </fieldset>
+
+    <div class="grid2">
+      <label class="field"><span id="name-label">Nombre completo</span><input name="full_name" autocomplete="name" required maxlength="80"></label>
+      <label class="field"><span>Teléfono (10 dígitos)</span><input name="phone" type="tel" inputmode="numeric" autocomplete="tel" required maxlength="15"></label>
+      <label class="field"><span>Correo electrónico</span><input name="email" type="email" autocomplete="email" required maxlength="120"></label>
+      <label class="field"><span>Contraseña (mínimo 8 caracteres)</span><input name="password" type="password" autocomplete="new-password" required minlength="8"></label>
+    </div>
+
+    <div class="extra" data-for="driver" hidden>
+      <h2>Tu vehículo</h2>
+      <div class="seg">
+        <label><input type="radio" name="vehicle_type" value="car" checked><span>Auto</span></label>
+        <label><input type="radio" name="vehicle_type" value="moto"><span>Moto</span></label>
+      </div>
+      <div class="grid2">
+        <label class="field"><span>Marca y modelo</span><input name="vehicle_model" maxlength="40" placeholder="Ej.: Nissan Versa 2020"></label>
+        <label class="field"><span>Color</span><input name="vehicle_color" maxlength="20" placeholder="Ej.: Blanco"></label>
+        <label class="field"><span>Placas</span><input name="vehicle_plate" maxlength="12" placeholder="Ej.: ABC123D"></label>
+      </div>
+      <p class="label">¿Qué servicios quieres hacer?</p>
+      <div class="checks">
+        <label><input type="checkbox" name="services" value="ride" checked> Viajes de pasajeros</label>
+        <label><input type="checkbox" name="services" value="package" checked> Paquetes</label>
+        <label><input type="checkbox" name="services" value="delivery" checked> Comida y compras</label>
+        <label class="only-car"><input type="checkbox" name="services" value="intercity"> Ciudad a ciudad</label>
+      </div>
+      <p class="hint">Después, en la app, subirás tu foto y tus documentos (INE, licencia, tarjeta de circulación y seguro) para que te aprobemos.</p>
+    </div>
+
+    <div class="extra" data-for="merchant" hidden>
+      <h2>Tu negocio</h2>
+      <div class="grid2">
+        <label class="field"><span>Nombre del negocio</span><input name="business_name" maxlength="60" placeholder="Ej.: Taquería Don Pepe"></label>
+      </div>
+      <div class="seg">
+        <label><input type="radio" name="business_category" value="food" checked><span>Comida</span></label>
+        <label><input type="radio" name="business_category" value="shopping"><span>Tienda</span></label>
+      </div>
+      <p class="hint">Después, en la app, completarás tus requisitos: datos fiscales, dirección, documentos y tu menú o catálogo.</p>
+    </div>
+
+    <!-- Campo trampa contra registros automáticos (las personas no lo ven) -->
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <label class="accept"><input type="checkbox" name="accept" required> <span>Tengo 18 años o más y acepto los <a href="terminos.html" target="_blank">Términos y Condiciones</a> y el <a href="privacidad.html" target="_blank">Aviso de Privacidad</a>.</span></label>
+
+    <p class="error" role="alert" hidden></p>
+    <button class="btn btn-dark btn-block" type="submit">Crear cuenta</button>
+  </form>
+
+  <div id="listo" class="done" hidden tabindex="-1">
+    <span class="done-ic"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+    <h2>¡Tu cuenta está lista!</h2>
+    <p id="done-text">Descarga la app e inicia sesión con tu correo y contraseña.</p>
+    <ol class="numbered" id="done-steps"></ol>
+    <a class="btn btn-dark" href="index.html#descargar">Ver cómo descargar la app</a>
+  </div>
+</div></section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script>
+(function () {
+  var sb = window.supabase.createClient("https://mjwbqpsazqrvdsnklihb.supabase.co", "sb_publishable_NojplSoSvHqQ5pmos4z_rg_OD2JJtzF", { auth: { persistSession: false } });
+  var form = document.getElementById('registro');
+  var errorBox = form.querySelector('.error');
+  var btn = form.querySelector('button[type=submit]');
+
+  function role() { return form.querySelector('input[name=role]:checked').value; }
+  function sync() {
+    var r = role();
+    form.querySelectorAll('.extra').forEach(function (el) { el.hidden = el.dataset.for !== r; });
+    document.getElementById('name-label').textContent = r === 'merchant' ? 'Tu nombre (dueño o encargado)' : 'Nombre completo';
+    var moto = (form.querySelector('input[name=vehicle_type]:checked') || {}).value === 'moto';
+    var ic = form.querySelector('.only-car');
+    ic.hidden = moto;
+    if (moto) ic.querySelector('input').checked = false;
+  }
+  var tipo = new URLSearchParams(location.search).get('tipo');
+  if (tipo === 'conductor') form.querySelector('input[value=driver]').checked = true;
+  if (tipo === 'negocio') form.querySelector('input[value=merchant]').checked = true;
+  form.addEventListener('change', sync);
+  sync();
+
+  function fail(msg) { errorBox.textContent = msg; errorBox.hidden = false; errorBox.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+  function v(name) { var el = form.elements[name]; return el ? String(el.value || '').trim() : ''; }
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    errorBox.hidden = true;
+    if (v('website')) return; // robot
+    var r = role();
+    // Sin barras invertidas en estas expresiones: el texto pasa por una plantilla de JavaScript y se perderían
+    var phone = v('phone').replace(/[^0-9]/g, '');
+    if (v('full_name').length < 3) return fail('Escribe tu nombre completo.');
+    if (phone.length < 10 || phone.length > 13) return fail('Escribe un teléfono de 10 dígitos.');
+    if (!/^[^@ ]+@[^@ ]+[.][^@ ]+$/.test(v('email'))) return fail('Escribe un correo válido.');
+    if (v('password').length < 8) return fail('La contraseña debe tener al menos 8 caracteres.');
+    var data = { full_name: v('full_name'), phone: phone, role: r };
+    if (r === 'driver') {
+      var services = Array.prototype.map.call(form.querySelectorAll('input[name=services]:checked'), function (c) { return c.value; });
+      if (!v('vehicle_model') || !v('vehicle_color') || !v('vehicle_plate')) return fail('Completa los datos de tu vehículo.');
+      if (!services.length) return fail('Elige al menos un servicio.');
+      data.vehicle_type = form.querySelector('input[name=vehicle_type]:checked').value;
+      data.vehicle_model = v('vehicle_model');
+      data.vehicle_color = v('vehicle_color');
+      data.vehicle_plate = v('vehicle_plate').toUpperCase();
+      data.services = services.join(',');
+    }
+    if (r === 'merchant') {
+      if (!v('business_name')) return fail('Escribe el nombre de tu negocio.');
+      data.business_name = v('business_name');
+      data.business_category = form.querySelector('input[name=business_category]:checked').value;
+    }
+    if (!form.elements.accept.checked) return fail('Para crear tu cuenta debes aceptar los Términos y el Aviso de Privacidad.');
+
+    btn.disabled = true;
+    btn.textContent = 'Creando tu cuenta…';
+    var res = await sb.auth.signUp({ email: v('email'), password: v('password'), options: { data: data } });
+    btn.disabled = false;
+    btn.textContent = 'Crear cuenta';
+    if (res.error) {
+      var m = res.error.message || '';
+      if (/registered|already/i.test(m)) return fail('Ya existe una cuenta con ese correo. Inicia sesión en la app.');
+      if (/password/i.test(m)) return fail('La contraseña no es válida: usa al menos 8 caracteres.');
+      if (/rate|too many/i.test(m)) return fail('Demasiados intentos. Espera unos minutos y vuelve a intentarlo.');
+      return fail('No se pudo crear la cuenta: ' + m);
+    }
+    // La sesión se queda en la app, no en el navegador
+    await sb.auth.signOut();
+
+    var steps = {
+      rider: ['Descarga Raitecitos.', 'Inicia sesión con tu correo y contraseña.', 'Sube tu foto de perfil y pide tu primer viaje.'],
+      driver: ['Descarga Raitecitos.', 'Inicia sesión con tu correo y contraseña.', 'Sube tu foto y tus documentos.', 'Te avisamos en cuanto te aprobemos para que empieces a ganar.'],
+      merchant: ['Descarga Raitecitos.', 'Inicia sesión con tu correo y contraseña.', 'Sube tu logo y completa tus requisitos.', 'Agrega tus productos; podrás abrir en cuanto te aprobemos.'],
+    }[r];
+    document.getElementById('done-steps').innerHTML = steps.map(function (t) { return '<li>' + t.replace(/[&<>]/g, '') + '</li>'; }).join('');
+    form.hidden = true;
+    var done = document.getElementById('listo');
+    done.hidden = false;
+    done.focus();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+</main>
+<footer class="site">
+  <div class="wrap cols">
+    <div class="col brandcol">
+      <a class="brand" href="index.html"><img src="logo.png" alt="" width="40" height="40"><span>Raitecitos</span></a>
+      <p>Viajes, envíos y comida a domicilio con precios que tú propones.</p>
+    </div>
+    <div class="col">
+      <h3>Servicios</h3>
+      <a href="index.html#servicios">Viajes en auto</a><a href="index.html#servicios">Viajes en moto</a><a href="index.html#servicios">Envío de paquetes</a><a href="index.html#servicios">Comida y compras</a><a href="index.html#servicios">Ciudad a ciudad</a>
+    </div>
+    <div class="col">
+      <h3>Gana con Raitecitos</h3>
+      <a href="index.html#conductores">Conduce</a><a href="index.html#negocios">Registra tu negocio</a>
+    </div>
+    <div class="col">
+      <h3>Ayuda</h3>
+      <a href="index.html#preguntas">Preguntas frecuentes</a><a href="mailto:raitecitos@gmail.com">raitecitos@gmail.com</a><a href="index.html#seguridad">Seguridad</a>
+    </div>
+    <div class="col">
+      <h3>Legal</h3>
+      <a href="privacidad.html">Aviso de Privacidad</a><a href="terminos.html">Términos y Condiciones</a><a href="eliminar-cuenta.html">Eliminar cuenta</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>© 2026 Raitecitos. Responsable: Fernando Alexander Peña Saliamonas · RFC PESF070322N91 · Calle Cisne, Fraccionamiento Las Aralias II, C.P. 48328, Puerto Vallarta, Jalisco, México.</p>
+    <p>Raitecitos es una plataforma tecnológica que conecta a usuarios con conductores independientes y negocios locales. Si estás en peligro, llama al 911.</p>
+  </div>
+</footer>
+</body>
+</html>
